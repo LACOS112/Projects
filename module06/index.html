@@ -1,6 +1,27 @@
-<picture>
-  <source
-    srcset="/shared-assets/module06/image/image-large.jpg"
-    media="(orientation: portrait)" />
-  <img src="/shared-assets/images/examples/painted-hand.jpg" alt="" />
-</picture>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empty HTML Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <figure>
+    <figcaption>SCP image</figcaption>
+  <picture>
+      <source
+        srcset="image/image-small.webp"
+        media="(max-width: 600px)" />
+      <source
+        srcset="image/image-small.jpg"
+        media="(max-width: 600px)" />
+      <source
+        srcset="image/image-large.webp" /> 
+      <source
+        srcset="image/image-large.jpg" />
+      <img src="image/image-small00.jpg" alt="SCP image" />
+    </picture>
+  </figure>
+</body>
+</html>
